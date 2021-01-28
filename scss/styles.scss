@@ -7,12 +7,12 @@ body{
         background-image: url(../imagenes/1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
     
 }
 
 a{
-    color: $light;
     text-decoration: none ;
 }
 
@@ -25,20 +25,26 @@ nav{
             padding-right: 2rem;
         }      
     }
-    a:hover{
-        font-weight: bold;
+    a{
+        color: $light;
+        &:hover{
+            font-weight: bold;
+        }
     }
+   
 }
 
 h1 {
     font-family: 'Staatliches', cursive;
     &.logo-index{
         font-size: 10rem;
-        color: $light;
         text-align: right;
         margin-top: 37vh;
         &:hover{
             font-size: 11rem;
         }
+    }
+    a{
+        color: $light;
     }
 }
