@@ -1,0 +1,44 @@
+$light: #ffffff;
+$dark: rgb(27, 22, 22);
+
+body{
+    background-color: $dark;
+    &.fondo-index{
+        background-image: url(../imagenes/fondo/marmol-negro.jpg);
+        background-repeat: repeat-y;
+        background-size: cover;
+    }
+    
+}
+
+a{
+    color: $light;
+    text-decoration: none ;
+}
+
+nav{
+    &.nav-index{
+        font-family: 'Overpass', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        a{
+            padding-right: 2rem;
+        }      
+    }
+    a:hover{
+        font-weight: bold;
+    }
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    &.logo-index{
+        font-size: 10rem;
+        color: $light;
+        text-align: center;
+        margin-top: 37vh;
+        &:hover{
+            font-size: 11rem;
+        }
+    }
+}
