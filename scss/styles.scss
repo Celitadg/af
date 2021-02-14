@@ -1,5 +1,7 @@
 $light: #ffffff;
 $dark: rgb(27, 22, 22);
+$grey:#c4b6b6;
+$peach: rgb(250, 176, 186);
 
 body{
     background-color: $dark;
@@ -9,32 +11,96 @@ body{
         background-size: cover;
         background-attachment: fixed;
     }
+    &.fondo-bio{
+        background-image: url(../imagenes/fondo/marmol-negro.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: center; 
+    }
+    &.fondo-contacto{
+        background-image: url(../imagenes/agu3.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: center;
+    }
+    &.fondo-portfolio{
+        background-image: url(../imagenes/fondo/marmol-negro.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        }
     
 }
 
 a{
     text-decoration: none ;
+    padding-left: 0;
+}
+
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header{
+    margin-top: 0;
+    margin-bottom: 0;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar{
+        padding-left: 0;
+    }
+    
+    .nav-item{
+        padding-left: 2rem;
+    }
+    
+    .primer-nav-item{
+        margin-left: 18rem;
+    } 
+    
+    nav a img:hover{
+        opacity: 0.4;
+    }
+    .portfolio-navbar{
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        right: 0;
+    }
+}
+
+footer{
+    background-color: $dark;
+    opacity: 0.8;
 }
 
 nav{
+    font-family: 'Overpass', sans-serif;
     &.nav-index{
-        font-family: 'Overpass', sans-serif;
         font-size: 1.25rem;
         text-align: right;
         a{
             padding-right: 2rem;
         }      
     }
+
+    &.rrss{
+        display: flex;
+        flex-direction: column;
+    }
+
     a{
         color: $light;
         &:hover{
             font-weight: bold;
         }
     }
-   
 }
 
-h1 {
+h1{
     font-family: 'Staatliches', cursive;
     &.logo-index{
         font-size: 10rem;
@@ -46,5 +112,124 @@ h1 {
     }
     a{
         color: $light;
+    }
+}
+
+h2{
+    font-family: 'Karla', sans-serif;
+    color: $peach;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+}
+
+h3{
+    font-family: 'Karla', sans-serif;
+    color: $grey;
+
+}
+
+h4{
+    font-family: 'Karla', sans-serif;
+    color: $grey;
+}
+
+article{
+    &.bio{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+    &.dashed{
+        border: $peach dashed;
+        background-color: $dark;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+    &.portfolio-derecha{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        @media (max-width:768px){
+            margin-left: 0;
+        }
+    }
+    &.portfolio-izquierda{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+        @media (max-width:768px){
+            margin-right: 0;
+        }
+    }
+}
+
+section{
+    &.recitales, &.candid, &.viajes, &.animales{
+        display: flex;
+        @media (max-width:768px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+
+p{
+    font-family: 'Overpass', sans-serif;
+    color: $light;
+    &.margenes-bio{
+        margin-left: 2rem;
+        margin-top: 30vh;
+
+    }
+}
+
+form{
+    margin-left: 40vw;
+    margin-top: 17vh;
+}
+
+img.borde{
+    border: $peach solid;
+    &:hover{
+        opacity: 0.5;
+    }
+    @media (max-width:992px){
+        margin-top:8rem;
+        }
+    @media (max-width:768px){
+        margin-top: 0;
+    }
+}
+
+@media (max-width:768px){
+    .img-musica{
+        order: 1;
+    }
+    .txt-musica{
+        order: 2;
+    }
+    .img-candid{
+        order: 3;
+    }
+    .txt-candid{
+        order: 4;
+    }
+    .img-viajes{
+        order: 5;
+    }
+    .txt-viajes{
+        order: 6;
+    }
+    .img-animales{
+        order: 7;
+    }
+    .txt-animales{
+        order: 8;
     }
 }

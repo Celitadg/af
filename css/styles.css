@@ -5,21 +5,68 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; }
+  body.fondo-bio {
+    background-image: url(../imagenes/fondo/marmol-negro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center; }
+  body.fondo-contacto {
+    background-image: url(../imagenes/agu3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center; }
+  body.fondo-portfolio {
+    background-image: url(../imagenes/fondo/marmol-negro.jpg);
+    background-size: cover;
+    background-attachment: fixed; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  padding-left: 0; }
 
-nav.nav-index {
-  font-family: 'Overpass', sans-serif;
-  font-size: 1.25rem;
-  text-align: right; }
-  nav.nav-index a {
-    padding-right: 2rem; }
+.container {
+  padding-left: 0;
+  padding-right: 0; }
 
-nav a {
-  color: #ffffff; }
-  nav a:hover {
-    font-weight: bold; }
+header {
+  margin-top: 0;
+  margin-bottom: 0; }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .navbar {
+    padding-left: 0; }
+  header .nav-item {
+    padding-left: 2rem; }
+  header .primer-nav-item {
+    margin-left: 18rem; }
+  header nav a img:hover {
+    opacity: 0.4; }
+  header .portfolio-navbar {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0; }
+
+footer {
+  background-color: #1b1616;
+  opacity: 0.8; }
+
+nav {
+  font-family: 'Overpass', sans-serif; }
+  nav.nav-index {
+    font-size: 1.25rem;
+    text-align: right; }
+    nav.nav-index a {
+      padding-right: 2rem; }
+  nav.rrss {
+    display: flex;
+    flex-direction: column; }
+  nav a {
+    color: #ffffff; }
+    nav a:hover {
+      font-weight: bold; }
 
 h1 {
   font-family: 'Staatliches', cursive; }
@@ -31,3 +78,95 @@ h1 {
       font-size: 11rem; }
   h1 a {
     color: #ffffff; }
+
+h2 {
+  font-family: 'Karla', sans-serif;
+  color: #fab0ba;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  color: #c4b6b6; }
+
+h4 {
+  font-family: 'Karla', sans-serif;
+  color: #c4b6b6; }
+
+article.bio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem; }
+
+article.dashed {
+  border: #fab0ba dashed;
+  background-color: #1b1616;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem; }
+
+article.portfolio-derecha {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem; }
+  @media (max-width: 768px) {
+    article.portfolio-derecha {
+      margin-left: 0; } }
+
+article.portfolio-izquierda {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem; }
+  @media (max-width: 768px) {
+    article.portfolio-izquierda {
+      margin-right: 0; } }
+
+section.recitales, section.candid, section.viajes, section.animales {
+  display: flex; }
+  @media (max-width: 768px) {
+    section.recitales, section.candid, section.viajes, section.animales {
+      flex-direction: column;
+      align-items: center; } }
+
+p {
+  font-family: 'Overpass', sans-serif;
+  color: #ffffff; }
+  p.margenes-bio {
+    margin-left: 2rem;
+    margin-top: 30vh; }
+
+form {
+  margin-left: 40vw;
+  margin-top: 17vh; }
+
+img.borde {
+  border: #fab0ba solid; }
+  img.borde:hover {
+    opacity: 0.5; }
+  @media (max-width: 992px) {
+    img.borde {
+      margin-top: 8rem; } }
+  @media (max-width: 768px) {
+    img.borde {
+      margin-top: 0; } }
+
+@media (max-width: 768px) {
+  .img-musica {
+    order: 1; }
+  .txt-musica {
+    order: 2; }
+  .img-candid {
+    order: 3; }
+  .txt-candid {
+    order: 4; }
+  .img-viajes {
+    order: 5; }
+  .txt-viajes {
+    order: 6; }
+  .img-animales {
+    order: 7; }
+  .txt-animales {
+    order: 8; } }
