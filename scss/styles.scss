@@ -69,6 +69,9 @@ header{
         z-index: 100;
         left: 0;
         right: 0;
+        @media (max-width:991px){
+            position: relative;
+        }
     }
 }
 
@@ -121,14 +124,14 @@ h2{
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
 
 }
 
 h3{
     font-family: 'Karla', sans-serif;
-    color: $grey;
+    color: $light;
 
 }
 
@@ -181,7 +184,7 @@ section{
 
 p{
     font-family: 'Overpass', sans-serif;
-    color: $light;
+    color: $grey;
     &.margenes-bio{
         margin-left: 2rem;
         margin-top: 30vh;
@@ -204,6 +207,12 @@ img.borde{
         }
     @media (max-width:768px){
         margin-top: 0;
+    }
+}
+
+@media (max-width:992px){
+    #portfolio-slider{
+        width: 100vw;
     }
 }
 
