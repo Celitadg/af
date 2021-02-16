@@ -154,17 +154,19 @@ img.borde {
     img.borde {
       margin-top: 0; } }
 
-.grid-candid {
+.grid-recitales {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-row: auto;
   grid-auto-flow: dense;
   gap: 0.2rem; }
 
-.grid-candid div img, .grid-viajes div img, .grid-recitales div img, .grid-animales div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+.grid-candid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-row: auto;
+  grid-auto-flow: dense;
+  gap: 0.2rem; }
 
 .grid-viajes {
   display: grid;
@@ -173,8 +175,20 @@ img.borde {
   grid-auto-flow: dense;
   gap: 0.2rem; }
 
+.grid-animales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-row: auto;
+  grid-auto-flow: dense;
+  gap: 0.2rem; }
+
 .vertical {
   grid-row: span 2; }
+
+.grid-candid div img, .grid-viajes div img, .grid-recitales div img, .grid-animales div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 @media (max-width: 992px) and (min-width: 768px) {
   .img-fluid {
