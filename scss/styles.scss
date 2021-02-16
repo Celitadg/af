@@ -190,6 +190,9 @@ p{
 a{
     text-decoration: none ;
     padding-left: 0;
+    &.dropdown-item.active{
+        background-color: $grey;
+    }
 }
 
 img.borde{

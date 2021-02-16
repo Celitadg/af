@@ -140,6 +140,8 @@ p {
 a {
   text-decoration: none;
   padding-left: 0; }
+  a.dropdown-item.active {
+    background-color: #c4b6b6; }
 
 img.borde {
   border: #fab0ba solid; }
