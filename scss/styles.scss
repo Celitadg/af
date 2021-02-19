@@ -49,6 +49,9 @@ header{
     
     .primer-nav-item{
         margin-left: 18rem;
+        @media (max-width:768px) {
+            margin-left: 0;
+        }
     } 
     
     nav a img:hover{
