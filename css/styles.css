@@ -33,7 +33,7 @@ header {
     padding-left: 2rem; }
   header .primer-nav-item {
     margin-left: 18rem; }
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       header .primer-nav-item {
         margin-left: 0; } }
   header nav a img:hover {
