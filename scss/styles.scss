@@ -243,9 +243,30 @@ img.borde{
     object-fit: cover;
 }
 
-@media (max-width:992px) and (min-width:768px){
+@media (min-width: 1200px){
+    .no-xl{
+        display: none;
+    }
+}
+
+@media (min-width:768px){
+    .no-m-l-xl{
+        display: none;
+    }
+}
+
+@media (min-width:334px) and (max-width:486px){
+    .no-xxs{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
     .img-fluid{
         max-width: none;
+    }
+    .no-m-l{
+        display: none;
     }
 }
 
