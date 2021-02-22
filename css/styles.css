@@ -3,13 +3,13 @@
   min-height: 100vh; }
 
 #content-wrap {
-  padding-bottom: 8rem; }
+  padding-bottom: 10rem; }
 
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 6rem; }
+  height: 8rem; }
 
 body {
   background-color: #1b1616; }
@@ -65,15 +65,23 @@ header {
 
 footer {
   background-color: #1b1616;
-  opacity: 0.8; }
+  opacity: 0.8;
+  padding-top: 0.7rem; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
 
 nav {
   font-family: 'Overpass', sans-serif; }
   nav.nav-index {
     font-size: 1.25rem;
-    text-align: right; }
+    text-align: right;
+    width: 100%; }
+    @media (max-width: 576px) {
+      nav.nav-index {
+        text-align: center; } }
     nav.nav-index a {
-      padding-right: 2rem; }
+      padding-left: 2rem; }
   nav.rrss {
     display: flex;
     flex-direction: column; }
@@ -156,11 +164,20 @@ p {
     margin-left: 2rem;
     margin-top: 30vh; }
 
+ul li {
+  list-style-type: none;
+  color: #ffffff;
+  font-family: 'Overpass', sans-serif; }
+
 a {
   text-decoration: none;
-  padding-left: 0; }
+  padding-left: 0;
+  color: #ffffff; }
   a.dropdown-item.active {
     background-color: #c4b6b6; }
+  a:hover {
+    text-decoration: none;
+    color: #c4b6b6; }
 
 img.borde {
   border: #fab0ba solid; }
@@ -172,6 +189,17 @@ img.borde {
   @media (max-width: 768px) {
     img.borde {
       margin-top: 0; } }
+
+#copyright {
+  color: #c4b6b6;
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%; }
+
+.copyright {
+  position: absolute;
+  bottom: 0; }
 
 .grid-recitales {
   display: grid;

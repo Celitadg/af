@@ -9,14 +9,14 @@ $peach: rgb(250, 176, 186);
 }
 
 #content-wrap{
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
 }
 
 #footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 6rem;
+    height: 8rem;
 }
 
 body{
@@ -91,6 +91,11 @@ header{
 footer{
     background-color: $dark;
     opacity: 0.8;
+    padding-top: 0.7rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 nav{
@@ -98,8 +103,12 @@ nav{
     &.nav-index{
         font-size: 1.25rem;
         text-align: right;
+        width: 100%;
+        @media (max-width:576px){
+            text-align: center;
+        }
         a{
-            padding-right: 2rem;
+            padding-left: 2rem;
         }      
     }
 
@@ -210,11 +219,22 @@ p{
     }
 }
 
+ul li{
+    list-style-type: none;
+    color: $light;
+    font-family: 'Overpass', sans-serif;
+}
+
 a{
     text-decoration: none ;
     padding-left: 0;
+    color: $light;
     &.dropdown-item.active{
         background-color: $grey;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $grey;
     }
 }
 
@@ -231,6 +251,19 @@ img{
             margin-top: 0;
         }
     }
+}
+
+#copyright{
+    color: $grey;
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
 }
 
 @mixin grillasGaleria ($size: 150px, $gap: 0.2rem, $row-height:auto) {
