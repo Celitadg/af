@@ -148,6 +148,11 @@ h2{
     padding-bottom: 1rem;
     font-size: 3rem;
     text-transform: uppercase;
+    &.variacion{
+        @media (max-width:576px) {
+            text-align: right;
+        }
+    }
 
 }
 
@@ -177,7 +182,14 @@ article{
     &.bio{
         display: flex;
         flex-direction: row;
-        margin-top: 5rem;
+        margin-top: 4rem;
+        @media (max-width:768px){
+            flex-direction: column;
+            img{
+                width: 100%;
+                align-items: center;
+            }
+        }
     }
     &.dashed{
         border: $peach dashed;
@@ -212,11 +224,6 @@ form{
 p{
     font-family: 'Overpass', sans-serif;
     color: $grey;
-    &.margenes-bio{
-        margin-left: 2rem;
-        margin-top: 30vh;
-
-    }
 }
 
 ul li{
@@ -261,9 +268,9 @@ img{
     width: 100%;
 }
 
-.copyright{
-    position: absolute;
-    bottom: 0;
+.margenes-bio{
+    margin-left: 1rem;
+    margin-right: 0;
 }
 
 @mixin grillasGaleria ($size: 150px, $gap: 0.2rem, $row-height:auto) {
