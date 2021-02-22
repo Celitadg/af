@@ -3,6 +3,22 @@ $dark: rgb(27, 22, 22);
 $grey:#c4b6b6;
 $peach: rgb(250, 176, 186);
 
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 8rem;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+}
+
 body{
     background-color: $dark;
     &.fondo-index{
@@ -28,6 +44,10 @@ body{
         background-size: cover;
         background-attachment: fixed;
         }
+    &.fondo-recitales{
+        background-image: url(../imagenes/fondo/marmol-negro.jpg);
+        background-size: cover;
+    }
     
 }
 
