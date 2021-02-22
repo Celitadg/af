@@ -175,7 +175,7 @@ article.portfolio-izquierda {
 
 form {
   margin-left: 35vw;
-  margin-top: 10vh;
+  margin-top: 3vh;
   display: flex; }
   @media (max-width: 576px) {
     form {
