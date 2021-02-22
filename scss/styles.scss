@@ -25,6 +25,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        max-width: 100vw;
     }
     &.fondo-bio{
         background-image: url(../imagenes/fondo/marmol-negro.jpg);
