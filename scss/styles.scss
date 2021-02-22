@@ -148,12 +148,22 @@ h2{
     padding-bottom: 1rem;
     font-size: 3rem;
     text-transform: uppercase;
+    animation: aparecer 3s ease 0s;
     &.variacion{
         @media (max-width:576px) {
             text-align: right;
         }
     }
 
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 h3{
@@ -182,7 +192,7 @@ article{
     &.bio{
         display: flex;
         flex-direction: row;
-        margin-top: 4rem;
+        margin-top: 2rem;
         @media (max-width:768px){
             flex-direction: column;
             img{
@@ -190,6 +200,10 @@ article{
                 align-items: center;
             }
         }
+    }
+    .biografia{
+        margin-left: 1rem;
+        margin-right: 0;
     }
     &.dashed{
         border: $peach dashed;
@@ -219,11 +233,30 @@ article{
 form{
     margin-left: 35vw;
     margin-top: 10vh;
+    display: flex;
+    @media (max-width:576px){
+        flex-direction: column;
+    }
+    .form-derecha{
+        padding-left: 2rem;
+        @media (max-width:576px) {
+            padding-left: 0;
+        }
+    }
+    label{
+        color: $light;
+        background-color: $peach;
+        font-family: 'Overpass', sans-serif;
+    }
 }
 
 p{
     font-family: 'Overpass', sans-serif;
     color: $grey;
+    &.txt-bio{
+        background-color: $dark;
+        opacity: 0.9;
+    }
 }
 
 ul li{
@@ -266,11 +299,6 @@ img{
     font-size: 0.8rem;
     text-align: center;
     width: 100%;
-}
-
-.margenes-bio{
-    margin-left: 1rem;
-    margin-right: 0;
 }
 
 @mixin grillasGaleria ($size: 150px, $gap: 0.2rem, $row-height:auto) {
