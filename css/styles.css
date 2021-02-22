@@ -32,9 +32,6 @@ body {
     background-image: url(../imagenes/fondo/marmol-negro.jpg);
     background-size: cover;
     background-attachment: fixed; }
-  body.fondo-recitales {
-    background-image: url(../imagenes/fondo/marmol-negro.jpg);
-    background-size: cover; }
 
 header {
   margin-top: 0;
@@ -264,7 +261,11 @@ img.borde {
 .grid-candid div img, .grid-viajes div img, .grid-recitales div img, .grid-animales div img {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  cursor: pointer; }
+  .grid-candid div img:hover, .grid-viajes div img:hover, .grid-recitales div img:hover, .grid-animales div img:hover {
+    transform: scale(1.2);
+    transition: 0.7s ease; }
 
 @media (min-width: 1200px) {
   .no-xl {
